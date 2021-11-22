@@ -1,0 +1,403 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gilroy", sans-serif;
+    color: #070707;
+    font-size: 18px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*--Container--*/
+
+.container {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*--Header--*/
+
+.header {
+
+}
+
+/*--Nav--*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding: 33px 0 35px;
+    line-height: 22px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #828282;
+}
+
+.nav__link:hover {
+    font-weight: 700;
+    color: #070707;
+}/*--Nav--*/
+
+/*--Denis Novik--*/
+
+.denis__novik {
+    height: 573px;
+    width: 100%;
+
+}
+
+.denis__novik__inner {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.denis__novik__title {
+    padding-top: 40px;
+    margin: 0;
+}
+
+.denis__novik__about {
+    padding-left: 250px;
+    margin: 0;
+}
+
+/*--about me--*/
+
+.about__me {
+    margin-top: 90px;
+    background: #F6F6F6;
+    height: 506px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about__me__title {
+    line-height: 42px;
+    padding: 30px 0 10px;
+}
+
+.about__me__text {
+    line-height: 22px;
+    padding: 20px 0 20px;
+    max-width: 940px;
+}/*--about me--*/
+
+/*--Skills--*/
+
+.skills {
+    height: 610px;
+    background: #fff;
+}
+
+.skills__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.skills__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    margin-top: 90px;
+}
+
+.skills__text {
+    line-height: 22px;
+    margin: 70px 0 85px;
+}
+
+.skills__programs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.skills__pro1,
+.skills__pro2,
+.skills__pro3,
+.skills__pro4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.skills__pro__logo {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+
+.skills__pro__name {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: #828282;
+    margin: 0;
+
+}
+
+.skills__pro__stars {
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+}/*--Skills--*/
+
+
+/*--Portfolio--*/
+
+
+.portfolio {
+    background: #F6F6F6;
+}
+
+.portfolio__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding: 113px 0 60px;
+}
+
+.portfolio__text {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding: 45px 0 99px;
+    color: #070707;
+}
+
+.portfolio__text a{
+    text-decoration: none;
+    color: #070707;
+}
+
+.portfolio__text a:hover {
+    text-decoration: underline;
+}/*--Portfolio--*/
+
+/*--Contacts--*/
+
+.footer {
+    margin: 0;
+    background: white;
+    text-align: center;
+    color: #070707;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+    padding: 114px 0 20px;
+}
+
+.footer__text {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
+.send__button {
+    background-color: #070707;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0;
+    height: 42px;
+    width: 180px;
+    border-radius: 25px;
+    margin-bottom: 85px;
+    cursor: pointer;
+}
+
+.social__icons {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.social__icon {
+    padding: 0 30px;
+}
+
+.footer__text__bottom {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 45px;
+    color: #828282;
+}
+
+.footer__text__bottom a {
+    text-decoration: none;
+    color: #828282;
+}
+
+.footer__text__bottom a:hover {
+    text-decoration: underline;
+}/*--Contacts--*/
+
+/*--Burger--*/
+
+.burger {
+    display: none;
+    background: none;
+    cursor: pointer;
+    border: 0;
+    padding: 65px 30px 0 300px;
+}
+
+.burger__item {
+    display: block;
+    width: 33px;
+    height: 3px;
+    background-color: #070707;
+    position: relative;
+    align-self: flex-end;
+}
+
+.burger__item:before,
+.burger__item:after {
+    content:"";
+    width: 33px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: #070707;
+}
+.burger__item:before {
+    top: -8px;
+}
+
+.burger__item:after {
+    top: -16px;
+}
+/*--Media--*/
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+    /*--burger--*/
+
+    .burger {
+        display: block;
+        margin-right: 0;
+    }
+
+    /*--Denis Novik--*/
+
+    .denis__novik {
+        height: 100%;
+    }
+
+    .denis__novik__title {
+        padding-top: 0;
+    }
+
+    .denis__novik__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+
+    .denis__novik__about {
+        padding: 20px 0;
+    }
+
+    .denis__novik__logo {
+        width: 565px;
+        max-width: 940px;
+        height: 100%;
+        left: 50%;
+        right: 50%;
+    }    /*--Denis Novik--*/
+
+    /*--about me--*/
+
+    .about__me {
+        height: auto;
+        padding: 0 25px;
+    } /*--about me--*/
+
+
+    /*--skills--*/
+    .skills {
+        height: auto;
+    width: auto;
+    }
+
+    .skills__title {
+    margin-top: 40px;
+    }
+
+    .skills__text {
+        margin: 20px 0;
+    }
+
+    .skills__pro1,
+    .skills__pro2,
+    .skills__pro3,
+    .skills__pro4 {
+        padding: 15px;
+        width: 100%;
+    }
+    /*--skills--*/
+
+    /*--portfolio--*/
+
+    .portfolio__title {
+        padding: 50px 0 30px;
+    }
+
+    .portfolio__1 {
+        width: 360px;
+    }
+
+    .portfolio__text {
+        padding: 25px 0 50px;
+    }/*--portfolio--*/
+
+
+    /*--contacts--*/
+
+    .send__button {
+        min-width: 316px;
+    }
+
+    .social__icon {
+        padding: 0 25px;
+    } /*--contacts--*/
+}
