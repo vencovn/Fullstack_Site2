@@ -138,7 +138,12 @@ h1, h2, h3, h4, h5, h6 {
 .skills__pro1,
 .skills__pro2,
 .skills__pro3,
-.skills__pro4 {
+.skills__pro4,
+.skills__pro5,
+.skills__pro6,
+.skills__pro7,
+.skills__pro8 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -343,6 +348,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 100%;
         left: 50%;
         right: 50%;
+        object-fit: cover;
     }    /*--Denis Novik--*/
 
     /*--about me--*/
@@ -356,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
     /*--skills--*/
     .skills {
         height: auto;
-    width: auto;
+        width: auto;
     }
 
     .skills__title {
@@ -370,10 +376,16 @@ h1, h2, h3, h4, h5, h6 {
     .skills__pro1,
     .skills__pro2,
     .skills__pro3,
-    .skills__pro4 {
+    .skills__pro4,
+    .skills__pro5,
+    .skills__pro6,
+    .skills__pro7,
+    .skills__pro8{
         padding: 15px;
         width: 100%;
+        margin-left: 20px;
     }
+
     /*--skills--*/
 
     /*--portfolio--*/
