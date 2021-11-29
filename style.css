@@ -54,27 +54,37 @@ h1, h2, h3, h4, h5, h6 {
 /*--Denis Novik--*/
 
 .denis__novik {
-    height: 573px;
+    height: auto;
     width: 100%;
 
 }
 
 .denis__novik__inner {
-    padding-bottom: 50px;
+    margin: 50px 0;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
-}
 
-.denis__novik__title {
-    padding-top: 40px;
-    margin: 0;
 }
 
 .denis__novik__about {
-    padding-left: 250px;
     margin: 0;
+}
+
+.denis__novik__lang {
+    transform: rotate(-90deg);
+    padding-left: 25px;
+    margin: 0;
+
+}
+.denis__novik__lang a {
+    text-decoration: none;
+    color: #070707;
+}
+.denis__novik__lang a:hover {
+    font-weight: bold;
 }
 
 /*--about me--*/
@@ -127,12 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skills__programs {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    margin-bottom: 40px;
 }
 
 .skills__pro1,
@@ -148,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
 }
 
 .skills__pro__logo {
@@ -324,18 +328,14 @@ h1, h2, h3, h4, h5, h6 {
 
     /*--Denis Novik--*/
 
-    .denis__novik {
-        height: 100%;
-    }
-
-    .denis__novik__title {
-        padding-top: 0;
+    .denis__novik__lang {
+        display: none;
     }
 
     .denis__novik__inner {
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 0;
+
     }
 
     .denis__novik__about {
@@ -383,7 +383,6 @@ h1, h2, h3, h4, h5, h6 {
     .skills__pro8{
         padding: 15px;
         width: 100%;
-        margin-left: 20px;
     }
 
     /*--skills--*/
