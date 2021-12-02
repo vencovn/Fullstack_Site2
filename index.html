@@ -10,30 +10,28 @@
     <link rel="stylesheet" href="./splide-3.5.8/dist/css/splide.min.css">
     <link rel="stylesheet" href="./style-slider.css">
     <title>Document</title>
+
 </head>
 <body>
     <header> <!--Header-->
         <div class="container">
-            <nav class="nav">
+            <nav class="nav jsNav">
                 <a class="nav__link" href="#">Home</a>
                 <a class="nav__link" href="#">About me</a>
                 <a class="nav__link" href="#">Skills</a>
                 <a class="nav__link" href="#">Portfolio</a>
                 <a class="nav__link" href="#">Contacts</a>
             </nav>
-            <!--burger-->
-            <button class="burger" type="button">
-                <span class="burger__item"></span>
-            </button>
+            <div class="burger jsBurger"><span class="burger__item jsBody"></span></div>
         </div>
     </header> <!--Header-->
     <main><!--Main-->
 
         <!--Denis Novik-->
-        <div class="denis__novik">
+        <div class="denis__novik jsDenis__novik">
             <div class="container">
                 <div class="denis__novik__inner">
-                    <h1 class="denis__novik__title">Denis <br>Novik</h1>
+                    <h1>Denis <br>Novik</h1>
                     <p class="denis__novik__about">UX | UI designer <br>24 years old, Minsk</p>
                     <p class="denis__novik__lang"><a href="#">RU</a>|<a href="#">ENG</a></p>
                 </div>
@@ -258,8 +256,9 @@
             </div>
         </footer> <!--Contacts-->
 
-
+<!--Javasript-->
     <script src="./splide-3.5.8/dist/js/splide.min.js"></script>
+    <script src="jquery-3.6.0.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
