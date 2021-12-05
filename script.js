@@ -1,4 +1,5 @@
 // Jquery - floating menu
+
 $(function() {
 
     let nav = $(".jsNav");
@@ -15,8 +16,6 @@ $(function() {
         } else {
             nav.removeClass("fixed");
         }
-
-        // console.log(scrollPos);
     });
 
 });// Jquery - floating menu
@@ -25,14 +24,40 @@ $(function() {
 
 const burgerMenu = document.querySelector('.jsBurger');
 const navMenu = document.querySelector('.jsNav');
+
 if (burgerMenu){
-    const burgerMenu = document.querySelector('.jsBody');
     burgerMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
         burgerMenu.classList.toggle('_active');
         navMenu.classList.toggle('_active');
     });
 }
+/*
+
+//scroll on click
+
+const menuLinks = document.querySelectorAll('.nav__link[data-goto]');
+if (menuLinks.length>0){
+    menuLinks.forEach(menuLink => {
+        menuLink.addEventListener("click", onMenuLinkClick);
+    });
+
+    function onMenuLinkClick (e) {
+        const menuLink = e.target;
+        if (menuLink.datasheet.goto && document.querySelector(menuLink.datasheet.goto)) {
+            const gotoBlock = document.querySelector(menuLink.datasheet.goto);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+            window.scrollTo({
+                top: gotoBlockValue,
+                behavior: "smooth"
+            });
+            e.preventDefault();
+        }
+    }
+}
+*/
+
 
 // Splider
 
